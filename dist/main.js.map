@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["console","log","number"],"mappings":"AAAA,aAAAA,QAAQC,IAAI,GACZD,QAAQC,IAAI,GAEZ,IAAMC,OAAS,EACfF,QAAQC,IAAI","file":"main.js","sourcesContent":["console.log(5);\r\nconsole.log(5);\r\n\nconst number = 5;\r\nconsole.log(\"app\");\r\n"]}

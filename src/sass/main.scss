@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
+
+$accent-clr: hsl(223, 85%, 58%);
+$primary-clr: hsl(210, 16%, 97%);
+$secondary-clr: hsl(225, 14%, 43%);
+$red-dot: hsl(3, 93%, 65%);
+$yellow-dot: hsl(44, 92%, 64%);
+$green-dot: hsl(123, 53%, 59%);
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 100vh;
+  color: $primary-clr;
+  background: url("../src/icons/Bubble-Background.svg") center center no-repeat
+    fixed;
+  background-size: cover;
+}
