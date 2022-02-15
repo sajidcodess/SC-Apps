@@ -1,0 +1,30 @@
+.apps {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  background-color: $bg-clr-light;
+  backdrop-filter: $blur;
+  border-radius: 30px;
+  padding: 0.5rem 5rem;
+}
+
+.app {
+  font-size: 2rem;
+  color: $secondary-clr;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    color: $primary-clr;
+  }
+}
+
+@include media-md {
+  .app {
+    font-size: 1.5rem;
+  }
+}

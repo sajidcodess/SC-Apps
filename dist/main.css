@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #5e667d;
+  box-shadow: 1px 0px 3px 1px rgba(250, 250, 250, 0.26);
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+.dots > * {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.dots .red {
+  background-color: #f95b53;
+}
+.dots .yellow {
+  background-color: #f8cb4f;
+}
+.dots .green {
+  background-color: #5fce65;
+}
+
+.notify {
+  display: flex;
+  gap: 1rem;
+}
+
+.apps {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 30px;
+  padding: 0.5rem 5rem;
+}
+
+.app {
+  font-size: 2rem;
+  color: #5e667d;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.app:hover {
+  transform: translateY(-0.5rem);
+  color: #f6f7f9;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    font-size: 1.5rem;
+  }
+}
 *,
 ::after,
 ::before {
@@ -9,10 +73,56 @@
 
 body {
   font-family: "Lato", sans-serif;
+  line-height: 1.5;
   width: 100%;
   height: 100vh;
   color: #f6f7f9;
   background: url("../src/icons/Bubble-Background.svg") center center no-repeat fixed;
   background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main .weather {
+  background-color: blue;
+}
+main .todo {
+  background-color: red;
+}
+
+main .active {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 95vw;
+  height: 90vh;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

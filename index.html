@@ -4,17 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <link rel="stylesheet" href="./dist/main.css" />
-    <script src="./dist/main.js"></script>
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/268d8a2bee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/main.js" defer></script>
+    <title>AC-Apps</title>
   </head>
   <body>
-    <h1>hello, My world we did it, it's me.</h1>
-    <p>
-      L0rem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-      obcaecati ipsa suscipit consectetur aliquid corporis incidunt, ea
-      aspernatur sit, eligendi distinctio quasi qui beatae reprehenderit
-      pariatur molestias facilis consequatur dolorum.
-    </p>
+    <div class="wrapper">
+      <header class="header">
+        <div class="dots">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <div class="notify">
+          <div class="notify__icon">
+            <i class="fas fa-bell"></i>
+          </div>
+          <div class="notify__battery">
+            <i class="fas fa-battery-half"></i>
+          </div>
+          <div class="notify__time">12:30</div>
+        </div>
+      </header>
+      <main>
+        <div class="weather"></div>
+        <div class="todo"></div>
+      </main>
+
+      <div class="apps">
+        <div class="app" title="Weather">
+          <i class="fas fa-cloud-sun-rain"></i>
+        </div>
+        <div class="app" title="Todo App">
+          <i class="fas fa-clipboard-list"></i>
+        </div>
+        <div class="app" title="Movies"><i class="fas fa-video"></i></div>
+        <div class="app" title="Books"><i class="fas fa-book"></i></div>
+        <div class="app" title="Foods"><i class="fas fa-utensils"></i></div>
+      </div>
+    </div>
   </body>
 </html>

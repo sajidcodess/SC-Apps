@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-clr-light;
+  backdrop-filter: $blur;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid $secondary-clr;
+  box-shadow: 1px 0px 3px 1px rgba(250, 250, 250, 0.26);
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+
+  & > * {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+  }
+
+  .red {
+    background-color: $red-dot;
+  }
+  .yellow {
+    background-color: $yellow-dot;
+  }
+  .green {
+    background-color: $green-dot;
+  }
+}
+
+.notify {
+  display: flex;
+  gap: 1rem;
+}
