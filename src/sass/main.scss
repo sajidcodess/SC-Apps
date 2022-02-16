@@ -13,6 +13,8 @@ $transition: all 200ms ease-in-out;
 
 @import "_mixins";
 @import "header";
+@import "weather-app";
+@import "main-apps";
 @import "taskbar";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
@@ -36,24 +38,6 @@ body {
   background-size: cover;
   display: grid;
   place-content: center;
-}
-
-main {
-  width: 100%;
-  height: 100%;
-  display: flex;
-
-  & .weather {
-    background-color: blue;
-  }
-  & .todo {
-    background-color: red;
-  }
-}
-
-main .active {
-  width: 100%;
-  height: 100%;
 }
 
 h1 {

@@ -7,11 +7,15 @@ setInterval(() => {
 
 // ==================================
 const allApps = document.querySelectorAll("main>*");
+console.log(allApps);
 const allIcons = document.querySelectorAll(".apps>*");
-console.log(allIcons);
 allIcons.forEach((icon) => {
   icon.addEventListener("click", (e) => {
-    icon.classList.remove("active");
-    console.log(e.target.classList);
+    allApps.forEach((app, idx) => {
+      app.classList.remove("active");
+      if (e.target.classList.contains(app.classList[0])) {
+        app.classList.add("active");
+      }
+    });
   });
 });

@@ -1,0 +1,34 @@
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  & > div {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: $transition;
+  }
+
+  & .todo {
+    background-color: red;
+  }
+  & .movies {
+    background-color: white;
+  }
+  & .books {
+    background-color: yellow;
+  }
+  & .food {
+    background-color: pink;
+  }
+}
+
+main div.active {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  opacity: 1;
+}
