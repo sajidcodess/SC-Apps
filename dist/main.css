@@ -34,10 +34,70 @@
   gap: 1rem;
 }
 
-.weather-app {
-  background-color: purple;
+.weather_app {
+  text-align: center;
+  margin-top: 2rem;
+}
+.weather_app_description {
+  color: #5e667d;
+  margin: 5px 0;
 }
 
+.weather_main input, .weather_main button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.weather_main input {
+  background-color: transparent;
+  border: 1px solid #5e667d;
+  color: #f6f7f9;
+  margin: 0 5px;
+}
+.weather_main input:hover {
+  border: 1px solid #f6f7f9;
+}
+.weather_main button {
+  background-color: #396cef;
+  color: #f6f7f9;
+}
+.weather_main_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5e667d;
+}
+
+.weather_stats {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px;
+  margin-top: 2rem;
+  gap: 5px;
+}
+.weather_stats > * {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #5e667d;
+  background-color: rgba(0, 0, 0, 0.08);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.weather_stats > *:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 700px) {
+  .weather_stats {
+    grid-template-columns: 170px 170px;
+  }
+  .weather_stats > * {
+    padding: 0.5rem;
+  }
+}
 main {
   width: 100%;
   height: 100%;
@@ -52,7 +112,7 @@ main > div {
   transition: all 200ms ease-in-out;
 }
 main .todo {
-  background-color: red;
+  background-color: #0ea80e;
 }
 main .movies {
   background-color: white;

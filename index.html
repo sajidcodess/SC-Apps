@@ -32,13 +32,19 @@
         </div>
       </header>
       <main>
-        <div class="weather weather-app active">
-          <h1>working</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            optio sapiente ea nostrum nobis, pariatur repellat beatae ullam, in
-            fugiat ratione quasi eius est nam molestias ab natus odio omnis?
+        <div class="weather weather_app active">
+          <h1 class="weather_app_title">Weather App</h1>
+          <p class="weather_app_description">
+            Search By City Name And Generate Latest Weather Report
           </p>
+          <div class="weather_main">
+            <form action="#" class="weather_main_form">
+              <input type="text" name="text" placeholder="Enter City Name" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="weather_main_content"></div>
+            <div class="weather_stats"></div>
+          </div>
         </div>
         <div class="todo todo-app"></div>
         <div class="movies movies-app"></div>

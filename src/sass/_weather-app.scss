@@ -1,3 +1,70 @@
-.weather-app {
-  background-color: purple;
+.weather_app {
+  text-align: center;
+  margin-top: 2rem;
+  &_description {
+    color: $secondary-clr;
+    margin: 5px 0;
+  }
+}
+
+.weather_main {
+  & input,
+  & button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+    transition: $transition;
+  }
+  & input {
+    background-color: transparent;
+    border: 1px solid $secondary-clr;
+    color: $primary-clr;
+    margin: 0 5px;
+    &:hover {
+      border: 1px solid $primary-clr;
+    }
+  }
+  & button {
+    background-color: $accent-clr;
+    color: $primary-clr;
+  }
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-clr;
+  }
+}
+
+.weather_stats {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px;
+  margin-top: 2rem;
+  gap: 5px;
+
+  & > * {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: $secondary-clr;
+    background-color: $bg-clr-light;
+    transition: $transition;
+    cursor: pointer;
+  }
+  & > *:hover {
+    background-color: $bg-clr;
+  }
+}
+
+@include media-md {
+  .weather_stats {
+    grid-template-columns: 170px 170px;
+
+    & > * {
+      padding: 0.5rem;
+    }
+  }
 }
