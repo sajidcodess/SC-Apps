@@ -11,6 +11,7 @@
 
 .dots {
   display: flex;
+  align-items: center;
   gap: 5px;
 
   & > * {
@@ -19,6 +20,9 @@
     border-radius: 10px;
   }
 
+  & small {
+    margin-left: 1rem;
+  }
   .red {
     background-color: $red-dot;
   }

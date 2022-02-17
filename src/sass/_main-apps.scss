@@ -5,16 +5,12 @@ main {
 
   & > div {
     position: absolute;
-    inset: 0;
     opacity: 0;
     transform: scale(0);
     transform-origin: bottom;
     transition: $transition;
   }
 
-  & .todo {
-    background-color: rgb(14, 168, 14);
-  }
   & .movies {
     background-color: white;
   }

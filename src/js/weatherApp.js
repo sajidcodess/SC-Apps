@@ -3,8 +3,6 @@ const weatherStats = document.querySelector(".weather_stats");
 const weatherInput = document.querySelector(".weather_main_form input");
 const weatherForm = document.querySelector(".weather_main_form");
 
-weatherInput.focus();
-
 const handleWeatherSubmit = async (e) => {
   e && e.preventDefault();
   let cityName = "dubai";
@@ -41,7 +39,7 @@ const handleWeatherSubmit = async (e) => {
     weatherMain.innerHTML = weatherMarkup;
     weatherStats.innerHTML = weatherStatsmarkup;
   } catch (err) {
-    alert("please Enter correct City Name");
+    weatherMain.textContent = "please Enter correct City Name";
   }
 
   weatherInput.value = "";

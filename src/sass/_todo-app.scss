@@ -1,0 +1,61 @@
+.todo_app {
+  text-align: center;
+  margin-top: 2rem;
+
+  &_description {
+    color: $secondary-clr;
+    margin: 5px 0 1rem 0;
+  }
+
+  & input[type="text"] {
+    padding: 10px;
+    border: 1px solid $secondary-clr;
+    border-radius: 20px;
+    color: $primary-clr;
+    background-color: transparent;
+    width: 300px;
+  }
+  &_btn {
+    padding: 5px 1rem;
+    font-size: 1.1rem;
+    background-color: $accent-clr;
+    color: $primary-clr;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.todo_list {
+  display: grid;
+  gap: 5px;
+  max-width: 500px;
+  margin: 2rem auto;
+
+  &_item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $bg-clr-light;
+    transition: $transition;
+
+    &:hover {
+      background-color: $bg-clr;
+    }
+  }
+
+  &_text {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  & i {
+    color: red;
+    cursor: pointer;
+  }
+}
