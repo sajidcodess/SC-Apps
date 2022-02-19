@@ -13,12 +13,10 @@ const browserSync = require("browser-sync").create();
 
 //sass to css
 function scssTask() {
-  return (
-    src("src/sass/main.scss", { sourcemaps: true })
-      .pipe(sass())
-      // .pipe(postcss([cssnano, postcssPresetEnv()]))
-      .pipe(dest("dist", { sourcemaps: "." }))
-  );
+  return src("src/sass/main.scss", { sourcemaps: true })
+    .pipe(sass())
+    .pipe(postcss([cssnano, postcssPresetEnv()]))
+    .pipe(dest("dist", { sourcemaps: "." }));
 }
 
 //js tasks
@@ -32,7 +30,7 @@ function jsTask() {
       //     presets: ["@babel/env"],
       //   })
       // )
-      // .pipe(terser())
+      .pipe(terser())
       .pipe(dest("./dist", { sourcemaps: "." }))
   );
 }
