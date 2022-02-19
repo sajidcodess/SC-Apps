@@ -36,6 +36,10 @@
     align-items: center;
     color: $secondary-clr;
   }
+
+  &_icon {
+    width: 150px;
+  }
 }
 
 .weather_stats {
@@ -62,9 +66,14 @@
 @include media-md {
   .weather_stats {
     grid-template-columns: 170px 170px;
+    margin-top: 1rem;
 
     & > * {
       padding: 0.5rem;
     }
+  }
+
+  .weather_app {
+    margin-top: 5px;
   }
 }

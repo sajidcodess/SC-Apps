@@ -10,16 +10,6 @@ main {
     transform-origin: bottom;
     transition: $transition;
   }
-
-  & .movies {
-    background-color: white;
-  }
-  & .books {
-    background-color: yellow;
-  }
-  & .food {
-    background-color: pink;
-  }
 }
 
 main div.active {

@@ -73,6 +73,9 @@
   align-items: center;
   color: #5e667d;
 }
+.weather_main_icon {
+  width: 150px;
+}
 
 .weather_stats {
   display: grid;
@@ -97,9 +100,14 @@
 @media screen and (max-width: 700px) {
   .weather_stats {
     grid-template-columns: 170px 170px;
+    margin-top: 1rem;
   }
   .weather_stats > * {
     padding: 0.5rem;
+  }
+
+  .weather_app {
+    margin-top: 5px;
   }
 }
 .todo_app {
@@ -116,7 +124,7 @@
   border-radius: 20px;
   color: #f6f7f9;
   background-color: transparent;
-  width: 300px;
+  width: 250px;
 }
 .todo_app_btn {
   padding: 5px 1rem;
@@ -154,8 +162,11 @@
   text-align: left;
 }
 .todo_list i {
-  color: red;
+  color: #f6f7f9;
   cursor: pointer;
+}
+.todo_list i:hover {
+  color: red;
 }
 
 main {
@@ -170,21 +181,73 @@ main > div {
   transform-origin: bottom;
   transition: all 200ms ease-in-out;
 }
-main .movies {
-  background-color: white;
-}
-main .books {
-  background-color: yellow;
-}
-main .food {
-  background-color: pink;
-}
 
 main div.active {
   width: 100%;
   height: 100%;
   transform: scale(1);
   opacity: 1;
+}
+
+.app_center {
+  text-align: center;
+  margin: 2rem auto;
+}
+.app_center .app_description {
+  margin: 5px 0 10px 0;
+  color: #5e667d;
+}
+.app_center .app_input, .app_center .app_btn {
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #5e667d;
+}
+.app_center .app_btn {
+  background-color: #396cef;
+  margin-left: 5px;
+  color: #f6f7f9;
+}
+.app_center .app_input {
+  color: #f6f7f9;
+}
+
+.grid {
+  display: grid;
+}
+.grid .sorry {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .app_center {
+    margin: 1rem;
+  }
+}
+.movies_grid {
+  place-content: center;
+  max-width: 500px;
+  padding: 5px;
+  margin-inline: auto;
+}
+.movies_grid_img {
+  width: 100px;
+  margin: 5px auto;
+}
+.movies_grid_plot {
+  color: #5e667d;
+}
+.movies_grid_flex {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.movies_grid_flex > * {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  max-width: 150px;
+  border-radius: 10px;
 }
 
 .apps {
@@ -246,6 +309,11 @@ h2 {
 
 p {
   font-size: 14px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .wrapper {

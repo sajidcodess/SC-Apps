@@ -33,7 +33,7 @@
         </div>
       </header>
       <main>
-        <div class="weather weather_app">
+        <div class="weather weather_app active">
           <h1 class="weather_app_title">Weather App</h1>
           <p class="weather_app_description">
             Search By City Name And Generate Latest Weather Report
@@ -47,32 +47,83 @@
             <div class="weather_stats"></div>
           </div>
         </div>
-        <div class="todo todo_app active">
+
+        <div class="todo todo_app">
           <h1 class="todo_app_title">Todo List</h1>
           <p class="todo_app_description">
             Create Your Daily Todo List And Track Your Tasks.
           </p>
           <form action="#" class="todo_app_form">
-            <input type="text" name="text" placeholder="Create A task" />
+            <input
+              type="text"
+              class="todo_app_input"
+              name="text"
+              placeholder="Create A task"
+            />
             <button class="todo_app_btn">+</button>
           </form>
 
-          <ul class="todo_list">
-            <li class="todo_list_item">
-              <input type="checkbox" class="todo_list_checkbox" />
-              <p class="todo_list_text">sdfefdfd sfdf df f df df df d ff df</p>
-              <i class="fas fa-trash-alt"></i>
-            </li>
-            <li class="todo_list_item">
-              <input type="checkbox" class="todo_list_checkbox" />
-              <p class="todo_list_text">sdfefdfd</p>
-              <i class="fas fa-trash-alt"></i>
-            </li>
-          </ul>
+          <ul class="todo_list"></ul>
         </div>
-        <div class="movies movies_app"></div>
-        <div class="books books_app"></div>
-        <div class="food food_app"></div>
+
+        <div class="movies movies_app app_center ">
+          <h1 class="movies_app_title app_title">Movies App</h1>
+          <p class="movies_app_description app_description">
+            Search Your Favorite Movies And Find Out Rating Score And Published
+            Date.
+          </p>
+          <form action="#" class="movies_app_form app_form">
+            <input
+              type="text"
+              class="movies_app_input app_input"
+              name="text"
+              placeholder="&#x1F50E;&#xFE0E Enter Movie Name"
+            />
+            <button class="movies_app_btn app_btn">Search</button>
+          </form>
+
+          <div class="grid movies_grid"></div>
+        </div>
+
+        <div class="books books_app app_center">
+          <h1 class="books_app_title app_title">Books App</h1>
+          <p class="books_app_description app_description">
+            Search Your Favorite Books And Authors
+          </p>
+          <form action="#" class="movies_app_form app_form">
+            <input
+              type="text"
+              class="books_app_input app_input"
+              name="text"
+              placeholder="&#x1F50E;&#xFE0E Enter Book Name"
+            />
+            <button class="books_app_btn app_btn">Search</button>
+          </form>
+
+          <div class="grid">
+            <h1 class="sorry">Sorry this App is not functional at the moment</h1>
+          </div>
+        </div>
+
+        <div class="food food_app app_center">
+          <h1 class="food_app_title app_title">Food App</h1>
+          <p class="food_app_description app_description">
+            Search delicious recipes, Cook them and then Invite Me :).
+          </p>
+          <form action="#" class="movies_app_form app_form">
+            <input
+              type="text"
+              class="food_app_input app_input"
+              name="text"
+              placeholder="&#x1F50E;&#xFE0E Enter Recipe Name"
+            />
+            <button class="food_app_btn app_btn">Search</button>
+          </form>
+
+          <div class="grid">
+            <h1 class="sorry">Sorry This App is not functional at the moment.</h1>
+          </div>
+        </div>
       </main>
 
       <div class="apps">

@@ -10,8 +10,6 @@ const handleWeatherSubmit = async (e) => {
 
   const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1c378d9838833e61cc4974ccc7b04fc5`;
 
-  console.log(cityName);
-
   try {
     const response = await fetch(weatherAPI);
     const data = await response.json();

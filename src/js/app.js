@@ -7,8 +7,8 @@ setInterval(() => {
 
 // ==================================
 const allApps = document.querySelectorAll("main>*");
-console.log(allApps);
 const allIcons = document.querySelectorAll(".apps>*");
+
 allIcons.forEach((icon) => {
   icon.addEventListener("click", (e) => {
     allApps.forEach((app, idx) => {

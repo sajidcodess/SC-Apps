@@ -13,7 +13,7 @@
     border-radius: 20px;
     color: $primary-clr;
     background-color: transparent;
-    width: 300px;
+    width: 250px;
   }
   &_btn {
     padding: 5px 1rem;
@@ -55,7 +55,11 @@
   }
 
   & i {
-    color: red;
+    color: $primary-clr;
     cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
   }
 }
