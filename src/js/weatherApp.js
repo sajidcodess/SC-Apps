@@ -5,7 +5,7 @@ const weatherForm = document.querySelector(".weather_main_form");
 
 const handleWeatherSubmit = async (e) => {
   e && e.preventDefault();
-  let cityName = "dubai";
+  let cityName = "paris";
   if (weatherInput.value) cityName = weatherInput.value;
 
   const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1c378d9838833e61cc4974ccc7b04fc5`;
