@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <script
-      src="https://kit.fontawesome.com/268d8a2bee.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./dist/main.js" defer></script>
-    <title>AC-Apps</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="dots">
-          <div class="red"></div>
-          <div class="yellow"></div>
-          <div class="green"></div>
-          <small>SCApps</small>
-        </div>
-        <div class="notify">
-          <div class="notify__icon">
-            <i class="fas fa-bell"></i>
-          </div>
-          <div class="notify__battery">
-            <i class="fas fa-battery-half"></i>
-          </div>
-          <div class="notify__time">12:30</div>
-        </div>
-      </header>
-      <main>
-        <div class="weather weather_app active">
-          <h1 class="weather_app_title">Weather App</h1>
-          <p class="weather_app_description">
-            Search By City Name And Generate Latest Weather Report
-          </p>
-          <div class="weather_main">
-            <form action="#" class="weather_main_form">
-              <input type="text" name="text" placeholder="Enter City Name" />
-              <button type="submit">Search</button>
-            </form>
-            <div class="weather_main_content"></div>
-            <div class="weather_stats"></div>
-          </div>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark light" />
+        <link rel="stylesheet" href="./dist/main.css" />
+        <script
+            src="https://kit.fontawesome.com/268d8a2bee.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./dist/main.js" defer></script>
+        <title>AC-Apps</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="dots">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                    <small>SCApps</small>
+                </div>
+                <div class="notify">
+                    <div class="notify__icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="notify__battery">
+                        <i class="fas fa-battery-half"></i>
+                    </div>
+                    <div class="notify__time">12:30</div>
+                </div>
+            </header>
 
-        <div class="todo todo_app">
-          <h1 class="todo_app_title">Todo List</h1>
-          <p class="todo_app_description">
-            Create Your Daily Todo List And Track Your Tasks.
-          </p>
-          <form action="#" class="todo_app_form">
-            <input
-              type="text"
-              class="todo_app_input"
-              name="text"
-              placeholder="Create A task"
-            />
-            <button class="todo_app_btn">+</button>
-          </form>
+            <main>
+                <div class="app_interface weather weather_app">
+                    <h1 class="weather_app_title">Weather App</h1>
+                    <p class="weather_app_description">
+                        Search By City Name And Generate Latest Weather Report
+                    </p>
+                    <div class="weather_main">
+                        <form action="#" class="weather_main_form">
+                            <input
+                                type="text"
+                                name="text"
+                                placeholder="Enter City Name"
+                            />
+                            <button type="submit">Search</button>
+                        </form>
+                        <div class="weather_main_content"></div>
+                        <div class="weather_stats"></div>
+                    </div>
+                </div>
 
-          <ul class="todo_list"></ul>
-        </div>
+                <div class="app_interface todo todo_app">
+                    <h1 class="todo_app_title">Todo List</h1>
+                    <p class="todo_app_description">
+                        Create Your Daily Todo List And Track Your Tasks.
+                    </p>
+                    <form action="#" class="todo_app_form">
+                        <input
+                            type="text"
+                            class="todo_app_input"
+                            name="text"
+                            placeholder="Create A task"
+                        />
+                        <button class="todo_app_btn">+</button>
+                    </form>
 
-        </div>
-      </main>
+                    <ul class="todo_list"></ul>
+                </div>
 
-      <div class="apps">
-        <div class="app" title="Weather">
-          <i class="fas fa-cloud-sun-rain weather"></i>
+                <div class="app_interface active recipe recipe_app">
+                    <div class="recipe_wrapper">
+                        <form action="#" class="recipe_form">
+                            <input
+                                type="text"
+                                name="recipe_input"
+                                class="recipe_input"
+                                placeholder="Search Recipe"
+                            />
+                            <button>Search</button>
+                        </form>
+                        <div class="recipe_grid"></div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="apps">
+                <div class="app weather_icon" title="weather_app">
+                    <i class="fas fa-cloud-sun-rain weather"></i>
+                </div>
+                <div class="app todo_icon" title="todo_app">
+                    <i class="fas fa-clipboard-list todo"></i>
+                </div>
+                <div class="app recipe_icon recipe" title="recipe_app">
+                    <svg class="recipe" height="1em" viewBox="0 0 640 512">
+                        <path
+                            d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z"
+                        />
+                    </svg>
+                </div>
+            </div>
         </div>
-        <div class="app" title="Todo App">
-          <i class="fas fa-clipboard-list todo"></i>
-        </div>
-       
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
